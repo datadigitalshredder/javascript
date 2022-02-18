@@ -1,16 +1,18 @@
+
+
 // CSE121B Project, Place a booking.
 
-// Create three variables that hold references to the input, button, and list elements using const.
+// Create three variables that hold references to the input, button, price, and list elements using const.
 const input = document.querySelector('input');
 const input1 = document.querySelector('#price');
 const button = document.querySelector('button');
 const list = document.querySelector('ul');
 priceArray = [];
 
-// Create an click event listener for the Add Chapter button using addEventListener and an anonymous function. 
+// Create an click event listener for the Add Item button using addEventListener. 
 button.addEventListener('click', function() {
 
-    // In the function block for adding a chapter, make sure the input is not blank
+    // In the function block for adding an item
     let myItem = input.value;
         input.value = '';
     let myPrice = input1.value;
@@ -48,7 +50,6 @@ button.addEventListener('click', function() {
     listBtn.onclick = function(e) {
         list.removeChild(listItem);
         list.removeChild(listValue);
-<<<<<<< HEAD
         //for( var i = 0; i < priceArray.length; i++) { 
                                    
            // if ( priceArray[i] === listValue) { 
@@ -65,7 +66,7 @@ button.addEventListener('click', function() {
             //if (index > -1) {
             //priceArray.splice(index, 1); // 2nd parameter means remove one item only
             //}
-        //priceArray.pop(listValue);
+        priceArray.pop(listValue);
         //for( var i = 0; i < priceArray.length; i++){ 
     
             //if ( priceArray[i] === listAmount) { 
@@ -76,6 +77,32 @@ button.addEventListener('click', function() {
         //}
         
         document.querySelector('#subtotal').textContent = priceArray.reduce((sum, number) => sum + number, 0);
+        
+        let sum = 0;
+
+        for (let i = 0; i < priceArray.length; i++) {
+            sum += priceArray[i];
+        }
+        console.log(sum);
+        const total = priceArray.reduce((sum, number) => sum + number, 0);
+        console.log(priceArray.reduce(total));
+        //let factor1 = document.querySelector('#subtotal').textContent;
+        let factor1 = sum
+        //let factor2 = 0.14;
+        let tax = '';
+
+        tax = taxCalclulator(factor1, factor2);
+        //tax = `${tax}`;
+
+        
+
+        function taxCalclulator(sum) {
+            return sum * .14;
+        }
+        // OUTPUT
+        document.querySelector('#tax').textContent = tax;
+
+        console.log(tax);
         
 
       }
@@ -88,21 +115,12 @@ button.addEventListener('click', function() {
         }
     document.querySelector('#subtotal').textContent = priceArray.reduce((sum, number) => sum + number, 0);document.querySelector('#subtotal').textContent = priceArray.reduce((sum, number) => sum + number, 0);
     console.log(priceArray)
-=======
 
-        priceArray.pop(listValue);
-
-        document.querySelector('#subtotal').textContent = priceArray.reduce((sum, number) => sum + number, 0);
-
->>>>>>> 0765db58e26119b4ca5b53b5ea09b338491d5b0b
+    
+    //document.querySelector('#tax').value = (multiplyNumbers);
     }
     // send the focus to the input element
     // clean up the successful add of a chapter by changing the input to nothing or the empty string and setting the focus to the input.
     input.focus();
-<<<<<<< HEAD
 });
 
-
-=======
-});
->>>>>>> 0765db58e26119b4ca5b53b5ea09b338491d5b0b
