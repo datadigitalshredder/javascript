@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+<<<<<<< HEAD
+	/*height: 100vh;*/
+=======
+	/*height: 200vh;*/
+>>>>>>> 0765db58e26119b4ca5b53b5ea09b338491d5b0b
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-family: Acme, Arial, sans-serif;
+<<<<<<< HEAD
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+.moto, h1 {
+    text-align: center;
+}
+
+=======
+}	
+
+h1, h2 {
+	font-size: 1.5rem;
+}
+
+h1 {
+	text-align: justify;
+	margin: 0 auto;
+}
+.menu {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+>>>>>>> 0765db58e26119b4ca5b53b5ea09b338491d5b0b
+main {
+	margin: 0.5rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 0.5rem;
+	background-color: #bed;
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 95%;
+<<<<<<< HEAD
+    border-radius: .5rem;
+}
+picture img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: .5rem;
+}
+=======
+	justify-content: center;
+}
+
+>>>>>>> 0765db58e26119b4ca5b53b5ea09b338491d5b0b
+input,
+button {
+	padding: 0.35rem;
+	margin-left: 1rem;
+	font-size: 1.1rem;
+}
+
+input {
+<<<<<<< HEAD
+	width: 200px;
+}
+
+label input {
+=======
+	width: 250px;
+}
+
+label {
+>>>>>>> 0765db58e26119b4ca5b53b5ea09b338491d5b0b
+	font-size: 0.9rem;
+}
+.listcontainer {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin: 1rem;
+	padding: 1rem;
+<<<<<<< HEAD
+    border-radius: .5rem;	
+}
+
+=======
+}
+picture img {
+	border-radius: .5rem;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+>>>>>>> 0765db58e26119b4ca5b53b5ea09b338491d5b0b
+.list {
+	margin: 0.2rem;
+}
+
+ul {
+	margin: 1rem;
+	list-style: none;
+}
+
+<<<<<<< HEAD
+div ul {
+	gap: 5rem;
+}
+
+=======
+.sum {
+    margin: 1rem;
+}
+.disclaimer {
+	color: red;
+}
+>>>>>>> 0765db58e26119b4ca5b53b5ea09b338491d5b0b
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 32.5em) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	main {
+		width: 960px;
+	}
+}
