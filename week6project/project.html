@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Book of Mormon - Top 25 Chapers">
-    <title>Bopoto Game Safari Lodge | Innocent Hove CSE121B</title>
+    <meta name="description" content="Bopoto Game Safari Lodge, make your booking">
+    <title>Bopoto Game Safari Lodge | Innocent Hove CSE121B Project</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/bom.css">
+    <link rel="stylesheet" href="project.css">
 </head>
 <body>
     <header>
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Activities</a></li>
                 <li><a href="#">Wildlife</a></li>
                 <li><a href="#">Camp map</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     
     <main>
-        <h1>Bopoto Game Safari Lodge</h1>
-        <h2>The heart of Africa's finest</h2>
+        <div>
+            <h1>Bopoto Game Safari Lodge</h1>
+            <h2 class="moto">The heart of Africa's finest</h2>
+        </div>
+        <div>
+            <picture>
+                <img src="wildlife.jpg" alt="African sunset and wildlife">
+            </picture>
+        </div>
         <h2>BOOKINGS/ MENU</h2>
         <table>
             <tr>
@@ -70,14 +77,25 @@
         <h3>Your bill:</h3>
         <div class="input">
             <label>Select item from list above<br>
-                <input type="text" id="favchap" placeholder="3-bed" required> <input type="number" id="price" placeholder="0.00"></label>
+                <input type="text" id="favitem" placeholder="3-bed" required> <input type="number" id="price" placeholder="0.00"></label>
             <button type="submit">Add Item</button>
         </div>
         <div class="listcontainer">
             <ul class="list">
             </ul>
         </div>
+        <section>
+            <div>
+                <p>Subtotal: $ <span id="subtotal"></span></p>
+            </div>
+            <div>
+                <p id="tax">Tax (14%): $ </p>
+            </div>
+            <div>
+                <p id="total">Total: $ </p>
+            </div>
+        </section>
     </main>
-    <script src="js/bom.js"></script>
+    <script src="project.js"></script>
 </body>
 </html>
