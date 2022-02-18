@@ -74,13 +74,11 @@
                 <th>US150.00</th>
             </tr>
         </table>
-        <h3>Your Order:</h3>
+        <h3>Your bill:</h3>
         <div class="input">
             <label>Select item from list above<br>
                 <input type="text" id="favitem" placeholder="3-bed" required> <input type="number" id="price" placeholder="0.00"></label>
             <button type="submit">Add Item</button>
-            <p class="disclaimer">Disclaimer: Please take note of a bug on our system when youremove an item on your list, it subtracts the last item instead.</p>
-
         </div>
         <div class="listcontainer">
             <ul class="list">
@@ -91,7 +89,10 @@
                 <p>Subtotal: $ <span id="subtotal"></span></p>
             </div>
             <div>
-                <p>Contact us to find out if you're tax exempt<br> +263 999-999-9999.</p>
+                <p>Tax (14%): $ <span id="tax"></span></p>
+            </div>
+            <div>
+                <p id="total">Total: $ </p>
             </div>
         </section>
     </main>
